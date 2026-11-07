@@ -12,17 +12,17 @@ Date:            November 7, 2026
 CORE SUBMISSION LINKS
 --------------------------------------------------------------------------------
 
-1. GitHub Repository:
+1. Google Drive Submission Folder:
+   https://drive.google.com/drive/folders/1nHtYyOT-PLWhj1DB_dlAWgPYYdGwRvUb
+
+2. GitHub Repository:
    https://github.com/iaryan08/kuku-promo-finder
 
-2. Live Interactive Studio (Streamlit):
+3. Live Interactive Studio (Streamlit):
    https://promocraft-ai.streamlit.app/
 
-3. Solution Document (PDF):
-   Kuku_Promo_Finder_Solution_Aryan_Mehra.pdf (in repo root, strictly 2 pages)
-
-4. Google Drive Submission Folder:
-   https://drive.google.com/drive/folders/1nHtYyOT-PLWhj1DB_dlAWgPYYdGwRvUb
+4. Solution Document (PDF):
+   Kuku_Promo_Finder_Solution_Aryan_Mehra.pdf 
 
 --------------------------------------------------------------------------------
 PROJECT SUMMARY & ARCHITECTURE
