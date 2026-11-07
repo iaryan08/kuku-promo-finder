@@ -1,6 +1,6 @@
 """
 scorer.py — Kuku Promo Finder
-Sends parsed scene windows to Gemini 3.6 / 3.8 Flash and scores them for promo potential.
+Sends parsed scene windows to Gemini 3.8 Flash (with automatic cascade) and scores them for promo potential.
 """
 
 import json
@@ -73,7 +73,7 @@ def format_window_content(events: list) -> str:
     return "\n".join(lines)
 
 
-def build_windows(episodes: list, min_dur: float = 20.0, max_dur: float = 65.0,
+def build_windows(episodes: list, min_dur: float = 20.0, max_dur: float = 60.0,
                   step: float = 15.0) -> list:
     """
     Build candidate promo windows across episodes using both scene combinations
@@ -169,9 +169,10 @@ def build_windows(episodes: list, min_dur: float = 20.0, max_dur: float = 65.0,
     return windows
 
 
-# Model priority list — strictly keeps 3.6 first, followed only by verified available models
+# Model priority list — gemini-3.8-flash primary, followed by fallback models
 DEFAULT_MODEL_CASCADE = [
-    "gemini-3.6-flash",         # Primary evaluator (strictly kept first)
+    "gemini-3.8-flash",         # Primary evaluator (recommended by Google API endpoint)
+    "gemini-3.6-flash",         # Verified working Flash
     "gemini-2.5-flash",         # Verified working Flash
     "gemini-3.5-flash",         # Verified working Flash
     "gemini-pro-latest",        # Verified working Pro fallback

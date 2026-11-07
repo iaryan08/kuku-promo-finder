@@ -194,7 +194,7 @@ def load_all_episodes(folder: str) -> list:
 
 
 if __name__ == "__main__":
-    folder = r"c:\Users\aryan\Desktop\kuku\I Married a Broken Soldier. He was a Duke"
+    folder = Path(__file__).parent / "data" / "I Married a Broken Soldier. He was a Duke"
     print("Parsing episodes...")
     eps = load_all_episodes(folder)
     print(f"\nLoaded {len(eps)} episodes.")

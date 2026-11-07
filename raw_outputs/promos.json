@@ -1,0 +1,440 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "total_promos_found": 16,
+  "promos": [
+    {
+      "rank": 1,
+      "episode": 13,
+      "window_start": "00:45.80",
+      "window_end": "01:34.00",
+      "duration_seconds": 48.2,
+      "scenes_covered": [
+        "02"
+      ],
+      "recommended_start": "00:45.80",
+      "recommended_end": "01:34.00",
+      "hook": {
+        "score": 10,
+        "description": "Dramatic conflict detected (gasp, mock)",
+        "timestamp": "00:45.80"
+      },
+      "cliffhanger": {
+        "score": 10,
+        "description": "Cut on unresolved tension (stop, iron)",
+        "timestamp": "01:34.00"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 28,
+      "one_liner": "High-tension candidate cut with 14 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 2,
+      "episode": 43,
+      "window_start": "00:43.90",
+      "window_end": "01:33.20",
+      "duration_seconds": 49.3,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:43.90",
+      "recommended_end": "01:33.20",
+      "hook": {
+        "score": 8,
+        "description": "Dramatic conflict detected (gasp, ruin)",
+        "timestamp": "00:43.90"
+      },
+      "cliffhanger": {
+        "score": 10,
+        "description": "Cut on unresolved tension (how, burn)",
+        "timestamp": "01:33.20"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 26,
+      "one_liner": "High-tension candidate cut with 17 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 3,
+      "episode": 1,
+      "window_start": "00:00.00",
+      "window_end": "00:32.80",
+      "duration_seconds": 32.8,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:00.00",
+      "recommended_end": "00:32.80",
+      "hook": {
+        "score": 8,
+        "description": "Dramatic conflict detected (wedding, altar)",
+        "timestamp": "00:00.00"
+      },
+      "cliffhanger": {
+        "score": 9,
+        "description": "Cut on unresolved tension (wait, stop)",
+        "timestamp": "00:32.80"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 25,
+      "one_liner": "High-tension candidate cut with 8 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 4,
+      "episode": 30,
+      "window_start": "00:58.80",
+      "window_end": "01:49.00",
+      "duration_seconds": 50.2,
+      "scenes_covered": [
+        "02"
+      ],
+      "recommended_start": "00:58.80",
+      "recommended_end": "01:49.00",
+      "hook": {
+        "score": 8,
+        "description": "Dramatic conflict detected (poison, fire)",
+        "timestamp": "00:58.80"
+      },
+      "cliffhanger": {
+        "score": 9,
+        "description": "Cut on unresolved tension (drag, witch)",
+        "timestamp": "01:49.00"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 25,
+      "one_liner": "High-tension candidate cut with 13 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 5,
+      "episode": 32,
+      "window_start": "00:58.00",
+      "window_end": "01:47.20",
+      "duration_seconds": 49.2,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:58.00",
+      "recommended_end": "01:47.20",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (tear)",
+        "timestamp": "00:58.00"
+      },
+      "cliffhanger": {
+        "score": 10,
+        "description": "Cut on unresolved tension (never, who)",
+        "timestamp": "01:47.20"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 25,
+      "one_liner": "High-tension candidate cut with 17 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 6,
+      "episode": 36,
+      "window_start": "00:00.00",
+      "window_end": "00:48.80",
+      "duration_seconds": 48.8,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:00.00",
+      "recommended_end": "00:48.80",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (gasp)",
+        "timestamp": "00:00.00"
+      },
+      "cliffhanger": {
+        "score": 10,
+        "description": "Cut on unresolved tension (never, who)",
+        "timestamp": "00:48.80"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 25,
+      "one_liner": "High-tension candidate cut with 14 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 7,
+      "episode": 39,
+      "window_start": "00:13.80",
+      "window_end": "00:50.00",
+      "duration_seconds": 36.2,
+      "scenes_covered": [
+        "02",
+        "03"
+      ],
+      "recommended_start": "00:13.80",
+      "recommended_end": "00:50.00",
+      "hook": {
+        "score": 8,
+        "description": "Dramatic conflict detected (fire, guards)",
+        "timestamp": "00:13.80"
+      },
+      "cliffhanger": {
+        "score": 9,
+        "description": "Cut on unresolved tension (stop, die)",
+        "timestamp": "00:50.00"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 25,
+      "one_liner": "High-tension candidate cut with 12 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 8,
+      "episode": 9,
+      "window_start": "00:28.80",
+      "window_end": "01:02.00",
+      "duration_seconds": 33.2,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:28.80",
+      "recommended_end": "01:02.00",
+      "hook": {
+        "score": 6,
+        "description": "Opening confrontation between characters.",
+        "timestamp": "00:28.80"
+      },
+      "cliffhanger": {
+        "score": 10,
+        "description": "Cut on unresolved tension (wait, die)",
+        "timestamp": "01:02.00"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 24,
+      "one_liner": "High-tension candidate cut with 13 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 9,
+      "episode": 21,
+      "window_start": "00:54.10",
+      "window_end": "01:54.00",
+      "duration_seconds": 59.9,
+      "scenes_covered": [
+        "03"
+      ],
+      "recommended_start": "00:54.10",
+      "recommended_end": "01:54.00",
+      "hook": {
+        "score": 8,
+        "description": "Dramatic conflict detected (fire, tear)",
+        "timestamp": "00:54.10"
+      },
+      "cliffhanger": {
+        "score": 8,
+        "description": "Cut on unresolved tension (stop, mine)",
+        "timestamp": "01:54.00"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 24,
+      "one_liner": "High-tension candidate cut with 17 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 10,
+      "episode": 25,
+      "window_start": "00:44.40",
+      "window_end": "01:30.20",
+      "duration_seconds": 45.8,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:44.40",
+      "recommended_end": "01:30.20",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (poison)",
+        "timestamp": "00:44.40"
+      },
+      "cliffhanger": {
+        "score": 9,
+        "description": "Cut on unresolved tension (wait, stop)",
+        "timestamp": "01:30.20"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 24,
+      "one_liner": "High-tension candidate cut with 14 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 11,
+      "episode": 47,
+      "window_start": "00:00.00",
+      "window_end": "00:55.50",
+      "duration_seconds": 55.5,
+      "scenes_covered": [
+        "01",
+        "02"
+      ],
+      "recommended_start": "00:00.00",
+      "recommended_end": "00:55.50",
+      "hook": {
+        "score": 8,
+        "description": "Dramatic conflict detected (fire, tear)",
+        "timestamp": "00:00.00"
+      },
+      "cliffhanger": {
+        "score": 8,
+        "description": "Cut on unresolved tension (never, burn)",
+        "timestamp": "00:55.50"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 24,
+      "one_liner": "High-tension candidate cut with 13 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 12,
+      "episode": 3,
+      "window_start": "01:34.00",
+      "window_end": "02:05.10",
+      "duration_seconds": 31.1,
+      "scenes_covered": [
+        "03"
+      ],
+      "recommended_start": "01:34.00",
+      "recommended_end": "02:05.10",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (altar)",
+        "timestamp": "01:34.00"
+      },
+      "cliffhanger": {
+        "score": 7,
+        "description": "Cut on unresolved tension (drag)",
+        "timestamp": "02:05.10"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 22,
+      "one_liner": "High-tension candidate cut with 11 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 13,
+      "episode": 5,
+      "window_start": "01:14.50",
+      "window_end": "01:50.50",
+      "duration_seconds": 36.0,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "01:14.50",
+      "recommended_end": "01:50.50",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (mock)",
+        "timestamp": "01:14.50"
+      },
+      "cliffhanger": {
+        "score": 7,
+        "description": "Cut on unresolved tension (iron)",
+        "timestamp": "01:50.50"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 22,
+      "one_liner": "High-tension candidate cut with 13 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 14,
+      "episode": 17,
+      "window_start": "00:51.50",
+      "window_end": "01:27.50",
+      "duration_seconds": 36.0,
+      "scenes_covered": [
+        "02"
+      ],
+      "recommended_start": "00:51.50",
+      "recommended_end": "01:27.50",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (fire)",
+        "timestamp": "00:51.50"
+      },
+      "cliffhanger": {
+        "score": 7,
+        "description": "Cut on unresolved tension (listen)",
+        "timestamp": "01:27.50"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 22,
+      "one_liner": "High-tension candidate cut with 7 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 15,
+      "episode": 27,
+      "window_start": "01:14.80",
+      "window_end": "01:47.80",
+      "duration_seconds": 33.0,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "01:14.80",
+      "recommended_end": "01:47.80",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (mock)",
+        "timestamp": "01:14.80"
+      },
+      "cliffhanger": {
+        "score": 7,
+        "description": "Cut on unresolved tension (who)",
+        "timestamp": "01:47.80"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 22,
+      "one_liner": "High-tension candidate cut with 11 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    },
+    {
+      "rank": 16,
+      "episode": 34,
+      "window_start": "00:44.80",
+      "window_end": "01:30.50",
+      "duration_seconds": 45.7,
+      "scenes_covered": [
+        "01"
+      ],
+      "recommended_start": "00:44.80",
+      "recommended_end": "01:30.50",
+      "hook": {
+        "score": 7,
+        "description": "Dramatic conflict detected (tear)",
+        "timestamp": "00:44.80"
+      },
+      "cliffhanger": {
+        "score": 7,
+        "description": "Cut on unresolved tension (iron)",
+        "timestamp": "01:30.50"
+      },
+      "standalone_score": 8,
+      "standalone_note": "Self-contained conflict clearly recognizable without full backstory.",
+      "total_score": 22,
+      "one_liner": "High-tension candidate cut with 15 characters and rapid dialogue momentum.",
+      "evaluated_by_model": "deterministic-heuristic-engine"
+    }
+  ]
+}

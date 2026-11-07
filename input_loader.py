@@ -187,6 +187,6 @@ def parse_args():
     parser.add_argument(
         "--confidential", "-c",
         action="store_true",
-        help="Run in 100% Confidential Mode: Zero external API calls (uses on-device heuristic engine)",
+        help="Run in 100%% Confidential Mode: Zero external API calls (uses on-device heuristic engine)",
     )
     return parser.parse_args()

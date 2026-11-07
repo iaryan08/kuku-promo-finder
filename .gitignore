@@ -8,9 +8,10 @@ data/**
 
 # ── Assignment docs (private / personal) ──
 *.pdf
-!Kuku_AI_Generalist_Solution_Document.pdf
+!Kuku_Promo_Finder_Solution_Aryan_Mehra.pdf
 role.md
 *Assignment*.pdf
+*.html
 
 # ── Raw outputs (committed for assignment fidelity evaluation) ──
 !raw_outputs/

@@ -11,12 +11,21 @@ Usage:
 
 import os
 import json
+import re
 from pathlib import Path
 from dotenv import load_dotenv
 
 from input_loader import resolve_input_folder, parse_args
 from parser import load_all_episodes
 from scorer import build_windows, score_windows, seconds_to_ts
+
+
+def ts_to_seconds(ts: str) -> float:
+    """Convert MM:SS.ss timestamp string to float seconds."""
+    m = re.match(r"(\d+):(\d+(?:\.\d+)?)", ts)
+    if not m:
+        return 0.0
+    return int(m.group(1)) * 60 + float(m.group(2))
 
 load_dotenv()
 
@@ -41,11 +50,26 @@ def rank_promos(scored_windows: list, top_n: int = 20) -> list:
     return ranked
 
 
-def build_output(ranked: list, show_title: str) -> dict:
-    """Build the final structured output dict for JSON export."""
+def build_output(ranked: list, show_title: str, min_clip_dur: float = 20.0) -> dict:
+    """Build the final structured output dict for JSON export.
+
+    Post-filter: if the LLM's recommended sub-window is shorter than min_clip_dur,
+    fall back to the full window timestamps so every published clip is in-spec.
+    """
     promos = []
     for rank, w in enumerate(ranked, 1):
         sc = w.get("score") or {}
+
+        # Resolve recommended start/end, with fallback to window timestamps
+        rec_start = sc.get("best_start", seconds_to_ts(w["window_start"]))
+        rec_end   = sc.get("best_end",   seconds_to_ts(w["window_end"]))
+
+        # Enforce minimum clip duration — reject sub-windows the LLM trimmed too far
+        clip_dur = ts_to_seconds(rec_end) - ts_to_seconds(rec_start)
+        if clip_dur < min_clip_dur:
+            rec_start = seconds_to_ts(w["window_start"])
+            rec_end   = seconds_to_ts(w["window_end"])
+
         promos.append({
             "rank": rank,
             "episode": w["episode_num"],
@@ -53,8 +77,8 @@ def build_output(ranked: list, show_title: str) -> dict:
             "window_end": seconds_to_ts(w["window_end"]),
             "duration_seconds": round(w["duration"], 1),
             "scenes_covered": w["scenes"],
-            "recommended_start": sc.get("best_start", seconds_to_ts(w["window_start"])),
-            "recommended_end":   sc.get("best_end",   seconds_to_ts(w["window_end"])),
+            "recommended_start": rec_start,
+            "recommended_end":   rec_end,
             "hook": {
                 "score":       sc.get("hook_score", 0),
                 "description": sc.get("hook_desc", ""),
@@ -69,6 +93,7 @@ def build_output(ranked: list, show_title: str) -> dict:
             "standalone_note":  sc.get("standalone_note", ""),
             "total_score":      sc.get("total_score", 0),
             "one_liner":        sc.get("one_liner", ""),
+            "evaluated_by_model": w.get("evaluated_by_model", ""),
         })
     return {"show": show_title, "total_promos_found": len(promos), "promos": promos}
 
@@ -119,7 +144,7 @@ def main():
     print("\n" + "=" * 60)
     print("STEP 3: Building candidate promo windows...")
     print("=" * 60)
-    windows = build_windows(episodes, min_dur=20.0, max_dur=65.0)
+    windows = build_windows(episodes, min_dur=20.0, max_dur=60.0)
     print(f"✓ {len(windows)} candidate windows built.")
 
     # ── Step 4: Score with Gemini ────────────────────────────────────────────

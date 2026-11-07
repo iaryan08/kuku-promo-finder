@@ -453,9 +453,9 @@ def main():
     with st.sidebar:
         st.markdown("### Kuku Promo Finder")
         st.caption(f"Show: *{SHOW_TITLE}*")
-        st.markdown("""
+        st.markdown(f"""
         <div style="display:inline-block; padding:4px 9px; background:#181818; border:1px solid #2e2e2e; border-radius:5px; font-size:11px; font-weight:700; color:#e2e8f0; margin-bottom:6px;">
-            50 EPISODES PARSED • TOP 10 RANKED CUTS
+            50 EPISODES PARSED • {len(promos)} RANKED CUTS
         </div>
         """, unsafe_allow_html=True)
         st.caption("Top-of-funnel ad cuts selected from full catalog analysis, ranked by 3s thumb-stop hook and cliffhanger tension.")
