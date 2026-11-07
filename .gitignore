@@ -1,0 +1,66 @@
+# ════════════════════════════════════════════
+# Kuku Promo Finder — .gitignore
+# ════════════════════════════════════════════
+
+# ── Kuku confidential content (NEVER commit) ──
+data/
+data/**
+
+# ── Assignment docs (private / personal) ──
+*.pdf
+!Kuku_AI_Generalist_Solution_Document.pdf
+role.md
+*Assignment*.pdf
+
+# ── Raw outputs (committed for assignment fidelity evaluation) ──
+!raw_outputs/
+!raw_outputs/*.json
+
+# ── Secrets & environment ──
+.env
+*.env
+!.env.example
+
+# ── Dev / scratch / diagnostic scripts ──
+test_*.py
+diagnose_*.py
+test_windows.py
+scratch/
+
+# ── Temp files ──
+*.tmp
+*.log
+
+# ── Python bytecode & build artifacts ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Virtual environments ──
+venv/
+.venv/
+env/
+.env/
+
+# ── Streamlit secrets ──
+.streamlit/secrets.toml
+
+# ── OS clutter ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
