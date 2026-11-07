@@ -21,6 +21,9 @@ CORE SUBMISSION LINKS
 3. Solution Document (PDF):
    Kuku_Promo_Finder_Solution_Aryan_Mehra.pdf (in repo root, strictly 2 pages)
 
+4. Google Drive Submission Folder:
+   https://drive.google.com/drive/folders/1nHtYyOT-PLWhj1DB_dlAWgPYYdGwRvUb
+
 --------------------------------------------------------------------------------
 PROJECT SUMMARY & ARCHITECTURE
 --------------------------------------------------------------------------------
