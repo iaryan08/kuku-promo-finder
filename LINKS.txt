@@ -1,0 +1,50 @@
+================================================================================
+KUKU AI LAB — AI GENERALIST ASSIGNMENT (PROBLEM 1: FIND THE PROMOS)
+================================================================================
+
+Applicant:       Aryan Mehra
+Email:           aryan_m@ee.iitr.ac.in
+Enrolment No:    23115025
+Department:      Electrical Engineering, Indian Institute of Technology Roorkee
+Date:            November 7, 2026
+
+--------------------------------------------------------------------------------
+CORE SUBMISSION LINKS
+--------------------------------------------------------------------------------
+
+1. GitHub Repository:
+   https://github.com/iaryan08/kuku-promo-finder
+
+2. Live Interactive Studio (Streamlit):
+   https://promocraft-ai.streamlit.app/
+
+3. Solution Document (PDF):
+   Kuku_Promo_Finder_Solution_Aryan_Mehra.pdf (in repo root, strictly 2 pages)
+
+--------------------------------------------------------------------------------
+PROJECT SUMMARY & ARCHITECTURE
+--------------------------------------------------------------------------------
+
+- Problem: Automate the discovery and ranking of 20s-60s promo clips across 
+  50 microdrama episodes of "I Married a Broken Soldier. He was a Duke".
+- Hybrid Architecture: "Code owns the clock, the LLM owns the drama."
+  1. Deterministic Regex Parser: Extracts timecodes, reduces chars by 28%.
+  2. Event-level Window Slider: Builds 565 candidate windows (20.0s to 60.0s).
+  3. Structured Evaluator: Gemini 3.8 Flash JSON scoring (Hook, Cliffhanger, 
+     Standalone) with automated fallback cascade and on-device Drama Heuristic 
+     Engine for 100% offline confidential execution (--confidential).
+  4. Temporal Deduplication: Ranks top 16 non-overlapping viral cuts.
+
+--------------------------------------------------------------------------------
+KEY METRICS & PRODUCTION ECONOMICS
+--------------------------------------------------------------------------------
+
+- Production Scale: Gemini 3.8 Flash via Paid Batch API (50% official Google discount)
+  * Tokens per show: ~220K in, ~25K out
+  * Cost per show: ~$0.13 ($1.30/week for 10 shows)
+  * Review Time: Reduces editor screening from ~2 hours to < 5 minutes per show
+- Empirical LLM Cross-Check:
+  * 60 windows evaluated against live Gemini 3.8 Flash
+  * Top-10 overlap: 3/10 (30%), Spearman rank correlation rho = 0.12
+  * Raw dataset: raw_outputs/llm_comparison_results.json
+================================================================================
